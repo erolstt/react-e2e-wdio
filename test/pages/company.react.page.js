@@ -3,16 +3,23 @@ var page = require('./page');
 var CompanyReactPage = Object.create(page, {
 
     // Webelements
-    userName:  { get: function () { return $('[name="username"]'); } },
-
+    companyName:  { get: function () { return $('[name="name"]'); } },
+    revenue:  { get: function () { return $('[name="revenue"]'); } },
+    assets:  { get: function () { return $('[name="assets"]'); } },
+    fDate:  { get: function () { return $('#founded--38_input'); } },
+    productsDropdown:  { get: function () { return $('[title="open dropdown"]'); } },
+    products:  { get: function () { return $('#productsDropdown--41__listbox'); } },
 
     // Methods
-    fillForm: { value: function (username, email, emailConf, password, devSkill) {
-        this.userName.setValue(username);
-        this.email.setValue(email);
-        this.emailConfirm.setValue(emailConf);
-        this.password.setValue(password);
-        this.devSkills.setValue(devSkill);
+    fillForm: { value: function (companyName, revenue, assets, fDate, product) {
+        this.companyName.setValue(companyName);
+        this.revenue.setValue(revenue);
+        this.assets.setValue(assets);
+        this.fDate.setValue(fDate);
+        this.productsDropdown.click();
+        this.products.waitForVisible();
+        browser.element('//li[contains(@id,\'productsDropdown--41\') and text()=\''+ product +'\']').click();
+
     }}
 
 });
