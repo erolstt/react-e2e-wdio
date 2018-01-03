@@ -61,3 +61,5 @@ typings/
 out/
 .idea
 
+package-lock.json
+errorShots
