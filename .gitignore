@@ -63,3 +63,5 @@ out/
 
 package-lock.json
 errorShots
+allure-results
+allure-report

@@ -8,7 +8,9 @@
     "webdriverio": "^4.9.11"
   },
   "devDependencies": {
+    "allure-commandline": "^2.5.0",
     "chai": "^4.1.2",
+    "wdio-allure-reporter": "^0.1.2",
     "wdio-chromedriver-service": "^0.1.2",
     "wdio-mocha-framework": "^0.5.12"
   },
