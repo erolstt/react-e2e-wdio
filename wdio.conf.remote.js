@@ -1,6 +1,8 @@
 exports.config = {
-    port: '9515',
-    path: '/',
+    port: '4444',
+    path: '/wd/hub',
+    host: 'localhost',
+    protocol: 'http',
 
     //
     // ==================
@@ -42,13 +44,11 @@ exports.config = {
     // https://docs.saucelabs.com/reference/platforms-configurator
     //
 
-    services: ['chromedriver'],
-
     capabilities: [{
         // maxInstances can get overwritten per capability. So if you have an in-house Selenium
         // grid with only 5 firefox instances available you can make sure that not more than
         // 5 instances get started at a time.
-        maxInstances: 5,
+        maxInstances: 1,
         //
         browserName: 'chrome'
     }],
