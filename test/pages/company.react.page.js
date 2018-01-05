@@ -3,12 +3,12 @@ var page = require('./page');
 var CompanyReactPage = Object.create(page, {
 
     // Webelements
-    companyName:  { get: function () { return $('[name="name"]'); } },
-    revenue:  { get: function () { return $('[name="revenue"]'); } },
-    assets:  { get: function () { return $('[name="assets"]'); } },
-    fDate:  { get: function () { return $('#founded--38_input'); } },
-    productsDropdown:  { get: function () { return $('[title="open dropdown"]'); } },
-    products:  { get: function () { return $('#productsDropdown--41__listbox'); } },
+    companyName:  { get: function () { return $('body [name="name"]'); } },
+    revenue:  { get: function () { return $('body [name="revenue"]'); } },
+    assets:  { get: function () { return $('body [name="assets"]'); } },
+    fDate:  { get: function () { return $('body #founded--38_input'); } },
+    productsDropdown:  { get: function () { return $('body [title="open dropdown"]'); } },
+    products:  { get: function () { return $('body #productsDropdown--41__listbox'); } },
 
     // Methods
     fillForm: { value: function (companyName, revenue, assets, fDate, product) {
