@@ -16,6 +16,12 @@ npm install
 npm test
 ```
 
+## Run test against a url with a specific configuration
+
+```
+./node_modules/.bin/wdio wdio.conf.js --b=https://foxhound87.github.io
+```
+
 ## Create Allure report
 
 Install allure-commandline
