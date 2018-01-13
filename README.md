@@ -49,7 +49,7 @@ Run Tests
 npm test wdio.conf.remote.js
 ```
 
-As Selenium standalone debug image is run which has VNC server, it's possible to go inside 
+As Selenium standalone debug image is run which has VNC server, it's possible to go inside
 the container and see what the browser is doing.
 
 You can connect to the server with any VNC client using the port number and the password
@@ -58,4 +58,18 @@ If you are running docker on Mac OS, then you can connect the server by putting 
 
 ```
 vnc://localhost:5900
+```
+
+## Docker Compose
+
+Running docker compose
+
+```
+docker-compose up
+```
+
+If you run below command, it will run tests in Chrome and Firefox in parallel. Each spec will run both on Chrome and Firefox browser.
+
+```
+npm test wdio.conf.remote.js
 ```

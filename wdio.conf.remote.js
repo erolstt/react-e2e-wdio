@@ -45,13 +45,15 @@ exports.config = {
     //
 
     capabilities: [{
-        // maxInstances can get overwritten per capability. So if you have an in-house Selenium
-        // grid with only 5 firefox instances available you can make sure that not more than
-        // 5 instances get started at a time.
-        browserName: 'chrome',
-        maxInstances: 2
-
-    }],
+      browserName: 'chrome',
+      maxInstances: 1
+       }, {
+           // maxInstances can get overwritten per capability. So if you have an in-house Selenium
+           // grid with only 5 firefox instances available you can make sure that not more than
+           // 5 instances get started at a time.
+           browserName: 'firefox',
+           maxInstances: 1
+       }],
 
     //
     // ===================
@@ -182,7 +184,7 @@ exports.config = {
      */
     // beforeCommand: function (commandName, args) {
     // },
-    
+
     /**
      * Hook that gets executed before the suite starts
      * @param {Object} suite suite details
@@ -219,7 +221,7 @@ exports.config = {
      */
     // afterSuite: function (suite) {
     // },
-    
+
     /**
      * Runs after a WebdriverIO command gets executed
      * @param {String} commandName hook command name
