@@ -1,5 +1,7 @@
 # react-e2e-wdio
 
+End to end test using webdriverio for a react web application.
+
 ## Tech Stack
 * Test Framework: Mocha
 * Assertion Library: Chai
