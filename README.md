@@ -9,7 +9,7 @@ End to end test using webdriverio for a react web application.
 * Browser: Chrome
 * Design Pattern: PageObject
 
-## Run tests
+## Running tests
 
 ```
 npm install
@@ -18,13 +18,13 @@ npm install
 npm test
 ```
 
-## Run test against a url with a specific configuration
+## Running test against a url with a specific configuration
 
 ```
 ./node_modules/.bin/wdio wdio.conf.js --b=https://foxhound87.github.io
 ```
 
-## Create Allure report
+## Creating Allure report
 
 Install allure-commandline
 
@@ -38,7 +38,7 @@ Run Allure generate report command
 allure generate allure-results
 ```
 
-## Run test in Selenium Docker Container
+## Running test in Selenium Docker Container
 
 Run Selenium standalone container
 ```
