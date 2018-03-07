@@ -51,8 +51,8 @@ Run Tests
 npm test wdio.conf.remote.js
 ```
 
-As Selenium standalone debug image is run which has VNC server, it's possible to go inside
-the container and see what the browser is doing.
+As Selenium standalone debug image has a VNC server, it's possible to go to inside
+the container and see what hapenning on the browser.
 
 You can connect to the server with any VNC client using the port number and the password
 which is `secret`
